@@ -20,7 +20,6 @@ public class EnemyAI : MonoBehaviour
     {
         if (target >= 0)
         {
-            print(waypoints.waypoints[target].transform.position);
             Vector3 distance = waypoints.waypoints[target].transform.position - transform.position;
             Vector2 distance2D = new Vector2(distance.x, distance.y);
             Vector3 movement = distance2D.normalized * movementSpeed * Time.deltaTime;
