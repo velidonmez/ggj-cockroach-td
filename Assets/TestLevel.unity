@@ -190,6 +190,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658728876}
+  - component: {fileID: 658728878}
+  - component: {fileID: 658728877}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -212,6 +214,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658728877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658728875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd17aca09c8ee3478df61b9bc11d9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t_water: {fileID: 21300000, guid: aff8d7d02659bae42a7fb7f3897c8bbf, type: 3}
+  t_lava: {fileID: 21300000, guid: 6aea0317ce4d4014499fae1d77ee272e, type: 3}
+  t_brick: {fileID: 21300000, guid: c0b81d17385f0b348ac642cadcfac7c8, type: 3}
+  t_ice: {fileID: 21300000, guid: 1a2585ec919fd0145994eab1f7ca86be, type: 3}
+  t_grass: {fileID: 21300000, guid: 9c26491e69b8829408e9ac5cd4c24ad1, type: 3}
+  t_stone: {fileID: 21300000, guid: a043cd4af914a4d41b81e9addd7d8b41, type: 3}
+  cube: {fileID: 6039838545393544034, guid: 67e7dc5aa0a2dd748b7165d153ba1b2f, type: 3}
+--- !u!114 &658728878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658728875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6704bc517980bd84d8904ae0467df067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeedMultiplier: 5
+  cameraFocusSpeedMultiplier: 6
+  cameraFocusMin: 35
+  cameraFocusMax: 15
 --- !u!1 &786396246
 GameObject:
   m_ObjectHideFlags: 0
