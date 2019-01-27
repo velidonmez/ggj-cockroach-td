@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public float movementSpeed = 3;
+    public float movementSpeed = 4;
 
     Waypoints waypoints;
     int target = 0;
@@ -25,12 +25,27 @@ public class EnemyAI : MonoBehaviour
             Vector3 movement = distance2D.normalized * movementSpeed * Time.deltaTime;
             transform.position += movement;
 
-            if (distance2D.sqrMagnitude < 2)
+            if (distance2D.sqrMagnitude < 1)
             {
                 target++;
                 if (target >= waypoints.waypoints.Length)
                     target = -1;
             }
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Home")
+        {
+            HomeHealth home = col.gameObject.GetComponent<HomeHealth>();
+            home.HealthDecrease();
+            Destroy(gameObject);
+        }
+        else if (col.tag == "Tower")
+        {
+            Pan pan = col.gameObject.GetComponent<Pan>();
+            pan.Attack(gameObject);
         }
     }
 }

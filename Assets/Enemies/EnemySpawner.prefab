@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3327982663684720911
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3327982663684720897}
+  - component: {fileID: 3327982663684720896}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3327982663684720897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327982663684720911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.8, y: 11.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3327982663684720896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327982663684720911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44eea01e405ac6a40905b51622b0dad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cockroach: {fileID: 7292875007803053858, guid: 1e8fa358bccb23f489dfc6321c681d1b,
+    type: 3}
+  enemiesToSpawn:
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 5
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 7
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 9
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 15
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 17
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 19
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 24
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 26
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 28
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 32
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 34
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 36
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 39
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 41
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 43
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 45
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 47
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 49
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 51
+  - enemyType: 0
+    timeSpawnAfterLevelStarts: 53
